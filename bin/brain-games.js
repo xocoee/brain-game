@@ -2,6 +2,6 @@
 
 import { salute } from "../src/cli.js";
 
-console.log('Welcome to the Brain Games!');
+export const welcomeUser = (console.log('Welcome to the Brain Games!'));
 
-salute();
+ salute();

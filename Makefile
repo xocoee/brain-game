@@ -10,5 +10,5 @@ brain-even:
 publish:
     npm publish --dry-run
 
-lint:
+make lint:
     npm eslint
