@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { salute } from "../src/cli.js";
-import { welcomeUser } from './brain-games.js';
 
 const parityNum = (number) => {
   return number % 2 === 0;
@@ -10,8 +8,10 @@ const noParityNum = (number) => {
   return number % 2 !== 0;
 };
 
-welcomeUser;
-salute();
+(console.log('Welcome to the Brain Games!'))
+
+const userName = readlineSync.question('May I have your name? ');
+console.log('Hi ' + userName + '!');
 
 const playGame = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -26,16 +26,16 @@ const playGame = () => {
       console.log('Correct!'),
       correctAnswersCount += 1;
     } else if (userAnswer === 'yes' && noParityNum(randomNumber)) {
-      console.log("Correct answer was 'no'.");
+      console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
       return;
     } else if (userAnswer === 'no' && parityNum(randomNumber)) {
-      console.log("'yes' is wrong answer ;(.");
-      return;
+      console.log(`'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}!`);
+      return; 
     } else {
       console.log("Input error! 'yes' or 'no'"); 
       return;
   }
 }
-console.log(`Congratulations! ${salute()}`);
+console.log(`Congratulations! ${userName}`);
 };
 playGame();
