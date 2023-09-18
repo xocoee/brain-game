@@ -14,7 +14,7 @@ console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
 console.log('Hi ' + userName + '!');
 
-const playGame = () => {
+export const playBrainEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   let correctAnswersCount = 0;
@@ -39,4 +39,3 @@ const playGame = () => {
 }
 console.log(`Congratulations! ${userName}`);
 };
-playGame();
