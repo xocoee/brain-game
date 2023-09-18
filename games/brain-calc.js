@@ -36,12 +36,11 @@ const playGame = () => {
             console.log('Correct!'),
             correctAnswersCount += 1;
         } else {
-            console.log("no");
-            //`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
+            console.log(`'${userAnswerNumber}' is wrong answer ;(. Correct answer was '${result}'.\nLet's try again, ${userName}!`);
             return;
         }
     }
-    console.log(`Congratulations! ${userName}`);
+    console.log(`Congratulations, ${userName}!`);
 };
 
 playGame()
