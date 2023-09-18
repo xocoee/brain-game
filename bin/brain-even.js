@@ -39,3 +39,4 @@ export const playBrainEven = () => {
 }
 console.log(`Congratulations! ${userName}`);
 };
+playBrainEven();
