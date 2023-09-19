@@ -33,7 +33,7 @@ const playGame = () => {
 
         if (userAnswerNumber === result) {
             console.log('Correct!'),
-            correctAnswersCount += 1;
+                correctAnswersCount += 1;
         } else {
             console.log(`'${userAnswerNumber}' is wrong answer ;(. Correct answer was '${result}'.\nLet's try again, ${userName}!`);
             return;

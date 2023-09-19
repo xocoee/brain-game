@@ -21,13 +21,13 @@ const playGame = () => {
         const randomNumberTwo = Math.floor(Math.random() * 100) + 1;
         const result = culcate(randomNumberOne, randomNumberTwo);
 
-        console.log(`Question: ${randomNumberOne} ${randomNumberTwo}`)
+        console.log(`Question: ${randomNumberOne} ${randomNumberTwo}`);
         const userAnswer = readlineSync.question('Your answer: ');
         const userAnswerNumber = Number(userAnswer);
 
         if (userAnswerNumber === result) {
             console.log('Correct!'),
-            correctAnswersCount += 1;
+                correctAnswersCount += 1;
         } else {
             console.log(`'${userAnswerNumber}' is wrong answer ;(. Correct answer was '${result}'.\nLet's try again, ${userName}!`)
             return;

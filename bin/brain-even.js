@@ -25,18 +25,18 @@ export const playBrainEven = () => {
 
     if (userAnswer === 'yes' && parityNum(randomNumber) || userAnswer === 'no' && noParityNum(randomNumber)) {
       console.log('Correct!'),
-      correctAnswersCount += 1;
+        correctAnswersCount += 1;
     } else if (userAnswer === 'yes' && noParityNum(randomNumber)) {
       console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
       return;
     } else if (userAnswer === 'no' && parityNum(randomNumber)) {
       console.log(`'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, ${userName}!`);
-      return; 
-    } else {
-      console.log("Input error! 'yes' or 'no'"); 
       return;
+    } else {
+      console.log("Input error! 'yes' or 'no'");
+      return;
+    }
   }
-}
-console.log(`Congratulations! ${userName}`);
+  console.log(`Congratulations! ${userName}`);
 };
 playBrainEven();
