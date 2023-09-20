@@ -10,7 +10,7 @@ console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
 console.log(`Hi ${userName}!`);
 
-export const playBrainEven = () => {
+const playBrainEven = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   let correctAnswersCount = 0;
@@ -20,7 +20,7 @@ export const playBrainEven = () => {
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer === 'yes' && parityNum(randomNumber) || userAnswer === 'no' && noParityNum(randomNumber)) {
-      console.log('Correct!'),
+      console.log('Correct!');
       correctAnswersCount += 1;
     } else if (userAnswer === 'yes' && noParityNum(randomNumber)) {
       console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
