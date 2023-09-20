@@ -15,7 +15,7 @@
 
 <b>Demonstration work of the game:</b>
 <ul>
-  <li>Calculator:<a href="https://asciinema.org/a/76cD5m7GJt3WTrv3aALT925YJ" target="_blank"><img src="https://asciinema.org/a/76cD5m7GJt3WTrv3aALT925YJ.svg" /></a></li>
+  <li>Calculator:<a width="100" height="100" href="https://asciinema.org/a/76cD5m7GJt3WTrv3aALT925YJ" target="_blank"><img src="https://asciinema.org/a/76cD5m7GJt3WTrv3aALT925YJ.svg" /></a></li>
   <li>Progression:</li>
   <li>Parity:</li>
   <li>Greatest Common Divisor:</li>

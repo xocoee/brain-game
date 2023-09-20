@@ -6,14 +6,14 @@ console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
 console.log(`Hi ${userName}!`);
 
-const playGame = () => {
+const playGameProgression = () => {
   console.log('What number is missing in the progression?');
   let correctAnswersCount = 0;
   while (correctAnswersCount < 3) {
     const randomNumber = Math.floor(Math.random() * 80) + 1;
     const resultNumber = [];
     const addTwo = (number) => {
-      for (let i = 0; i < 8; i++) {
+      for (let i = 0; i < 8; i += 1) {
         resultNumber.push(number);
         number += 2;
       }
@@ -30,7 +30,7 @@ const playGame = () => {
     const userAnswerNumber = Number(userAnswer);
 
     if (userAnswerNumber === randomNumberIndex) {
-      console.log('Correct!'),
+      console.log('Correct!');
       correctAnswersCount += 1;
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${randomNumberIndex}'.\nLet's try again, ${userName}!`);
@@ -39,4 +39,5 @@ const playGame = () => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
-playGame();
+
+playGameProgression();

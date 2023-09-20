@@ -6,7 +6,7 @@ console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
 console.log(`Hi ${userName}!`);
 
-const playGame = () => {
+const playGameGcd = () => {
   const culcate = (num1, num2) => {
     const smallNumber = Math.min(num1, num2);
     for (let i = smallNumber; i > 1; i -= 1) {
@@ -27,7 +27,7 @@ const playGame = () => {
     const userAnswerNumber = Number(userAnswer);
 
     if (userAnswerNumber === result) {
-      console.log('Correct!'),
+      console.log('Correct!');
       correctAnswersCount += 1;
     } else {
       console.log(`'${userAnswerNumber}' is wrong answer ;(. Correct answer was '${result}'.\nLet's try again, ${userName}!`);
@@ -36,4 +36,5 @@ const playGame = () => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
-playGame();
+
+playGameGcd();
