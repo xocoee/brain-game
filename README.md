@@ -36,7 +36,7 @@
 <ul>
   <li>Calculator:<a href="https://asciinema.org/a/A4Iw2LNiOaULoRA5N20vBxZMK" target="_blank"><img src="https://asciinema.org/a/A4Iw2LNiOaULoRA5N20vBxZMK.svg" /></a></li>
   <li>Progression:<a href="https://asciinema.org/a/PTDImBsGXK39FGAvB9qv2M7ql" target="_blank"><img src="https://asciinema.org/a/PTDImBsGXK39FGAvB9qv2M7ql.svg" /></a></li>
-  <li>Number is even:<a href="https://asciinema.org/a/eGg7Sbud2T3cjZbEOukqqXUUR" target="_blank"><img src="https://asciinema.org/a/eGg7Sbud2T3cjZbEOukqqXUUR.svg" /></a></li>
-  <li>Greatest Common Divisor:<a href="https://asciinema.org/a/mDIBYwl6jaWyVgrtn5Elxx8IN" target="_blank"><img src="https://asciinema.org/a/mDIBYwl6jaWyVgrtn5Elxx8IN.svg" /></a></li>
+  <li>Even number:<a href="https://asciinema.org/a/eGg7Sbud2T3cjZbEOukqqXUUR" target="_blank"><img src="https://asciinema.org/a/eGg7Sbud2T3cjZbEOukqqXUUR.svg" /></a></li>
+  <li>GCD:<a href="https://asciinema.org/a/mDIBYwl6jaWyVgrtn5Elxx8IN" target="_blank"><img src="https://asciinema.org/a/mDIBYwl6jaWyVgrtn5Elxx8IN.svg" /></a></li>
   <li>Prime number:<a href="https://asciinema.org/a/z2Er0aMvfTH4cIzsjZjU0NgpC" target="_blank"><img src="https://asciinema.org/a/z2Er0aMvfTH4cIzsjZjU0NgpC.svg" /></a></li>
 </ul>
