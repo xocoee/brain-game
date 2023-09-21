@@ -24,10 +24,8 @@ const playGamePrime = () => {
   let correctAnswersCount = 0;
   while (correctAnswersCount < 3) {
     const randomNumber = Math.floor(Math.random() * 100) + 1;
-   
     console.log(`Question: ${randomNumber}`);
     const userAnswer = readlineSync.question('Your answer: ');
-
     if (userAnswer === 'yes' && primeNumber(randomNumber)) {
       console.log('Correct!');
       correctAnswersCount += 1;
