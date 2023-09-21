@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
+import correct from '../src/index.js';
 
 console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
@@ -18,10 +19,10 @@ const playGameEven = () => {
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer === 'yes' && parityNum(randomNumber)) {
-      console.log('Correct!');
+      correct();
       correctAnswersCount += 1;
     } else if (userAnswer === 'no' && noParityNum(randomNumber)) {
-      console.log('Correct!');
+      correct();
       correctAnswersCount += 1;
     } else if (userAnswer === 'yes' && noParityNum(randomNumber)) {
       console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${userName}!`);
