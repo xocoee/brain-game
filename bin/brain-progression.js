@@ -4,7 +4,7 @@ import readlineSync from 'readline-sync';
 
 console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
-console.log(`Hi ${userName}!`);
+console.log(`Hello, ${userName}!`);
 
 const playGameProgression = () => {
   console.log('What number is missing in the progression?');
