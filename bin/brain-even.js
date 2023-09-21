@@ -5,12 +5,12 @@ import readlineSync from 'readline-sync';
 console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${userName}!`);
+console.log('Answer "yes" if the number is even, otherwise answer "no".');
+
+const parityNum = (number) => number % 2 === 0;
+const noParityNum = (number) => number % 2 !== 0;
 
 const playGameEven = () => {
-  const parityNum = (number) => number % 2 === 0;
-  const noParityNum = (number) => number % 2 !== 0;
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
   let correctAnswersCount = 0;
   while (correctAnswersCount < 3) {
     const randomNumber = Math.floor(Math.random() * 100) + 1;
