@@ -7,7 +7,7 @@ const userName = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${userName}!`);
 
 const playGameGcd = () => {
-  console.log("Find the greatest common divisor of given numbers.");
+  console.log('Find the greatest common divisor of given numbers.');
   const culcate = (num1, num2) => {
     const smallNumber = Math.min(num1, num2);
     for (let i = smallNumber; i > 1; i -= 1) {
