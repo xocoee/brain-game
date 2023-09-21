@@ -9,13 +9,13 @@ console.log(`Hello, ${userName}!`);
 const playGamePrime = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no"');
   let correctAnswersCount = 0;
-   while (correctAnswersCount < 3) {
+  while (correctAnswersCount < 3) {
     const randomNumber = Math.floor(Math.random() * 100) + 1;
     const primeNumber = (num) => {
       if (num < 2) {
         return false;
       }
-    
+
       for (let i = 2; i <= num / 2; i += 1) {
         if (num % i === 0) {
           return false;
@@ -25,7 +25,7 @@ const playGamePrime = () => {
     };
     console.log(`Question: ${randomNumber}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    
+
     if (userAnswer === 'yes' && primeNumber(randomNumber)) {
       console.log('Correct!');
       correctAnswersCount += 1;
