@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import correct from '../src';
 
 console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name? ');
@@ -33,7 +32,7 @@ const playGameProgression = () => {
     const userAnswer = readlineSync.question('Your answer: ');
     const userAnswerNumber = Number(userAnswer);
     if (userAnswerNumber === riddledNumber) {
-      correct();
+      console.log('Correct!');
       correctAnswersCount += 1;
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${randomNumberIndex}'.\nLet's try again, ${userName}!`);
