@@ -8,8 +8,8 @@ const isEven = (number) => number % 2 === 0;
 const getQuestionAndAnswer = () => {
   const number = getRandom(1, 100);
   const question = String(number);
-  const correctAnswer = isEven(number) ? 'yes' : 'no';
-  return { question, correctAnswer };
+  const correctUserAnswer = isEven(number) ? 'yes' : 'no';
+  return { question, correctUserAnswer };
 };
 
 const runGameEven = () => run(rules, getQuestionAndAnswer);
