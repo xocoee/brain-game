@@ -1,27 +1,26 @@
-import getRandom from '../random.js';
+import getRandomNumber from '../untils.js';
 import run from '../index.js';
 
-const rules = 'What number is missing in the progression?';
-const progressionLength = 8;
+const description = 'What number is missing in the progression?';
 
 const generateProgression = (startNum, step) => {
   const progression = [];
-  for (let i = 0; i < progressionLength; i += 1) {
+  for (let i = 0; i < 8; i += 1) {
     progression.push(startNum + step * i);
   }
   return progression;
 };
-const getQuestionAndAnswer = () => {
-  const randomNumber = getRandom(0, 100);
+const generateRound = () => {
+  const randomNumber = getRandomNumber(0, 100);
   const step = 2;
   const progression = generateProgression(randomNumber, step);
-  const indexToHide = getRandom(0, progressionLength - 1);
-  const correctAnswer = String(progression[indexToHide]);
+  const indexToHide = getRandomNumber(0, 8 - 1);
+  const answer = String(progression[indexToHide]);
   progression[indexToHide] = '..';
   const question = progression.join(' ');
-  return { question, correctAnswer };
+  return { question, answer };
 };
 
-const runGameProgression = () => run(rules, getQuestionAndAnswer);
+const runGameProgression = () => run(description, generateRound);
 
 export default runGameProgression;

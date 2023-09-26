@@ -1,17 +1,17 @@
-import getRandom from '../random.js';
+import getRandomNumber from '../untils.js';
 import run from '../index.js';
 
-const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (number) => number % 2 === 0;
 
-const getQuestionEven = () => {
-  const number = getRandom(0, 100);
+const generateRound = () => {
+  const number = getRandomNumber(0, 100);
   const question = String(number);
-  const correctAnswer = isEven(number) ? 'yes' : 'no';
-  return { question, correctAnswer };
+  const answer = isEven(number) ? 'yes' : 'no';
+  return { question, answer };
 };
 
-const runGameEven = () => run(rules, getQuestionEven);
+const runGameEven = () => run(description, generateRound);
 
 export default runGameEven;

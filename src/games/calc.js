@@ -1,35 +1,35 @@
-import getRandom from '../random.js';
+import getRandomNumber from '../untils.js';
 import run from '../index.js';
 
-const rules = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
-const calc = (num1, num2, operationType) => {
+const calculate = (number1, number2, operationType) => {
   switch (operationType) {
     case '+':
-      return num1 + num2;
+      return number1 + number2;
     case '-':
-      return num1 - num2;
+      return number1 - number2;
     case '*':
-      return num1 * num2;
+      return number1 * number2;
     default:
       throw new Error('Operator not supported');
   }
 };
 
-const getOperator = () => {
-  const operators = ['+', '-', '*'];
-  return operators[Math.floor(Math.random() * 3)];
-};
-
-const getQuestionAndAnswer = () => {
-  const num1 = getRandom(1, 100);
-  const num2 = getRandom(1, 100);
+const generateRound = () => {
+  const getOperatorIndex = 3;
+  const getOperator = () => {
+    const operators = ['+', '-', '*'];
+    return operators[Math.floor(Math.random() * getOperatorIndex)];
+  };
+  const number1 = getRandomNumber(1, 100);
+  const number2 = getRandomNumber(1, 100);
   const operator = getOperator();
-  const question = `${num1} ${operator} ${num2}`;
-  const correctAnswer = String(calc(num1, num2, operator));
-  return { question, correctAnswer };
+  const question = `${number1} ${operator} ${number2}`;
+  const answer = String(calculate(number1, number2, operator));
+  return { question, answer };
 };
 
-const runGameCalc = () => run(rules, getQuestionAndAnswer);
+const runGameCalc = () => run(description, generateRound);
 
 export default runGameCalc;

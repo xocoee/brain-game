@@ -1,9 +1,9 @@
-import getRandom from '../random.js';
+import getRandomNumber from '../untils.js';
 import run from '../index.js';
 
-const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const primeNumber = (num) => {
+const isPrimeNumber = (num) => {
   if (num < 2) {
     return false;
   }
@@ -15,13 +15,13 @@ const primeNumber = (num) => {
   return true;
 };
 
-const getQuestionPrimeNumber = () => {
-  const number = getRandom(0, 100);
+const generateRound = () => {
+  const number = getRandomNumber(0, 100);
   const question = String(number);
-  const correctAnswer = primeNumber(number) ? 'yes' : 'no';
-  return { question, correctAnswer };
+  const answer = isPrimeNumber(number) ? 'yes' : 'no';
+  return { question, answer };
 };
 
-const runGamePrime = () => run(rules, getQuestionPrimeNumber);
+const runGamePrime = () => run(description, generateRound);
 
 export default runGamePrime;
