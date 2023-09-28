@@ -3,7 +3,7 @@ import run from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
-const progressionCount = 8;
+const progressionCount = getRandomNumber(5, 15);
 const generateProgression = (startNum, step) => {
   const progression = [];
   for (let i = 0; i < progressionCount; i += 1) {
