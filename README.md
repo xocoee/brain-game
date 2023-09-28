@@ -1,7 +1,7 @@
-### Hexlet tests and linter status:
+Hexlet tests and linter status:
 [![Actions Status](https://github.com/xocoee/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/xocoee/frontend-project-44/actions)
 
-### HTTP Maintainability in CodeClimate:
+HTTP Maintainability in CodeClimate:
 <img src="https://api.codeclimate.com/v1/badges/82c59d73510bd57bbc36/maintainability" />
 
 <br>
