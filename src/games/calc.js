@@ -1,4 +1,4 @@
-import getRandomNumber from '../untils.js';
+import getRandomNumber from '../utils.js';
 import run from '../index.js';
 
 const description = 'What is the result of the expression?';
@@ -12,21 +12,17 @@ const calculate = (number1, number2, operationType) => {
     case '*':
       return number1 * number2;
     default:
-      throw new Error('Operator not supported');
+      throw new Error(operationType);
   }
 };
 
 const generateRound = () => {
-  const getOperatorIndex = 3;
-  const getOperator = () => {
-    const operators = ['+', '-', '*'];
-    return operators[Math.floor(Math.random() * getOperatorIndex)];
-  };
+  const operators = ['+', '-', '*'];
+  const getOperator = operators[Math.floor(Math.random() * getRandomNumber(1, 4))];
   const number1 = getRandomNumber(1, 100);
   const number2 = getRandomNumber(1, 100);
-  const operator = getOperator();
-  const question = `${number1} ${operator} ${number2}`;
-  const answer = String(calculate(number1, number2, operator));
+  const question = `${number1} ${getOperator} ${number2}`;
+  const answer = String(calculate(number1, number2, getOperator));
   return { question, answer };
 };
 

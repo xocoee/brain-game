@@ -1,9 +1,9 @@
-import getRandomNumber from '../untils.js';
+import getRandomNumber from '../utils.js';
 import run from '../index.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const isPrimeNumber = (num) => {
+const isPrime = (num) => {
   if (num < 2) {
     return false;
   }
@@ -18,7 +18,7 @@ const isPrimeNumber = (num) => {
 const generateRound = () => {
   const number = getRandomNumber(0, 100);
   const question = String(number);
-  const answer = isPrimeNumber(number) ? 'yes' : 'no';
+  const answer = isPrime(number) ? 'yes' : 'no';
   return { question, answer };
 };
 
