@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/xocoee/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/xocoee/frontend-project-44/actions)
 
 ### HTTP Maintainability in CodeClimate:
-<a href="https://codeclimate.com/github/xocoee/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/82c59d73510bd57bbc36/maintainability" /></a>
+<img src="https://api.codeclimate.com/v1/badges/82c59d73510bd57bbc36/maintainability" />
 
 <br>
 <b>«Brain games»</b> — set of five console games, built on the principle of popular mobile applications for <i>brain pumping</i>. Every game asks questions, for which you need to give <b>right answers</b>. After three correct answers it is considered, that the game is completed. Correct answers end the game and prompt you to play it again. <br><b>Ganmes:</b></br>
