@@ -12,17 +12,17 @@ const calculate = (number1, number2, operationType) => {
     case '*':
       return number1 * number2;
     default:
-      throw new Error(operationType);
+      throw new Error('Wrong operand!');
   }
 };
 
 const generateRound = () => {
   const operators = ['+', '-', '*'];
-  const getOperator = operators[getRandomNumber(0, operators.length - 1)];
+  const operator = operators[getRandomNumber(0, operators.length - 1)];
   const number1 = getRandomNumber(1, 100);
   const number2 = getRandomNumber(1, 100);
-  const question = `${number1} ${getOperator} ${number2}`;
-  const answer = String(calculate(number1, number2, getOperator));
+  const question = `${number1} ${operator} ${number2}`;
+  const answer = String(calculate(number1, number2, operator));
   return { question, answer };
 };
 
