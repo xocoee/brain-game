@@ -38,5 +38,5 @@ HTTP Maintainability in CodeClimate:
   <li>Progression:<a href="https://asciinema.org/a/nC9eemJL8NEQXFpzXPJr77L3Z" target="_blank"><img src="https://asciinema.org/a/nC9eemJL8NEQXFpzXPJr77L3Z.svg" /></a></li>
   <li>Even number:<a href="https://asciinema.org/a/mxqITZDVuvtTfgvTWURS6YGeG" target="_blank"><img src="https://asciinema.org/a/mxqITZDVuvtTfgvTWURS6YGeG.svg" /></a></li>
   <li>GCD:<a href="https://asciinema.org/a/GbifvVlx1TQHWJ3mac3BDKIUH" target="_blank"><img src="https://asciinema.org/a/GbifvVlx1TQHWJ3mac3BDKIUH.svg" /></a></li>
-  <li>Prime number:<a href="https://asciinema.org/a/oBX4tNyFe0BLF3ueEtBrTjruH" target="_blank"><img src="https://asciinema.org/a/oBX4tNyFe0BLF3ueEtBrTjruH.svg" /></a></li>
+  <li>Prime number:<a href="https://asciinema.org/a/e0Eld9ZKUphbKqeeikQ53Gt09" target="_blank"><img src="https://asciinema.org/a/e0Eld9ZKUphbKqeeikQ53Gt09.svg" /></a></li>
 </ul>
