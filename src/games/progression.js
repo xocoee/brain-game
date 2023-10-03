@@ -1,20 +1,17 @@
-import getRn from '../utils.js';
+import getRandomNumber from '../utils.js';
 import run from '../index.js';
+import generateProgression from '../lib.js';
 
 const description = 'What number is missing in the progression?';
 
 const generateRound = () => {
-  const maxLastIndex = 2;
-  const generateProgression = (numberStartProg, stepToProg, length) => {
-    const progression = [];
-    for (let i = 0; i < length; i += 1) {
-      progression.push(numberStartProg + stepToProg * i);
-    }
-    return progression;
-  };
+  const maxLastIndex = 1;
+  const startProgression = getRandomNumber(1, 100);
+  const stepProgression = getRandomNumber(2, 8);
+  const lengthProgression = getRandomNumber(5, 15);
 
-  const progression = generateProgression(getRn(1, 100), getRn(2, 8), getRn(5, 15));
-  const indexToHide = getRn(0, progression.length - maxLastIndex);
+  const progression = generateProgression(startProgression, stepProgression, lengthProgression);
+  const indexToHide = getRandomNumber(0, progression.length - maxLastIndex);
   const answer = String(progression[indexToHide]);
   progression[indexToHide] = '..';
   const question = progression.join(' ');
