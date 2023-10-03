@@ -24,9 +24,3 @@ const generateRound = () => {
 const runGameProgression = () => run(description, generateRound);
 
 export default runGameProgression;
-// const generateProgression = (startNum, stepToFunction) => {
-//   const progression = [];
-//   for (let i = 0; i < progersionLenght; i += 1) {
-//     progression.push(startNum + stepToFunction * i);
-//   }
-//   return progression;
