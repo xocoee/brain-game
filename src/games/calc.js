@@ -12,7 +12,7 @@ const calculate = (number1, number2, operationType) => {
     case '*':
       return number1 * number2;
     default:
-      throw new Error('Wrong operand!');
+      throw new Error('Wrong operand!', operationType);
   }
 };
 
