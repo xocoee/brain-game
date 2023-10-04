@@ -1,6 +1,6 @@
 import getRandomNumber from '../utils.js';
 import run from '../index.js';
-import generateProgression from '../lib.js';
+import generateProgression from './lib.js';
 
 const description = 'What number is missing in the progression?';
 
