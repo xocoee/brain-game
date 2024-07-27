@@ -2,43 +2,54 @@
 
 <a href="https://codeclimate.com/github/xocoee/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/82c59d73510bd57bbc36/maintainability" /></a>
 
-### Project Description
+## Project Description
 
-<br>
-<b>«Brain games»</b> — set of five console games, built on the principle of popular mobile applications for <i>brain pumping</i>. Every game asks questions, for which you need to give <b>right answers</b>. After three correct answers it is considered, that the game is completed. Correct answers end the game and prompt you to play it again. <br><b>Ganmes:</b></br>
-<b>Calculator</b> - arithmetic expressions, that need to be evaluated.<br>
-<b>Progression</b> - finding missing numbers in a sequence of numbers.<br>
-<b>Number is even</b> - definition of even number.<br>
-<b>Greatest Common Divisor</b> - determining the greatest common divisor.<br>
-<b>Prime number</b> - prime number definition..
-<br>
+"Brain Games" is a project consisting of 5 console games designed to train your brain. Each game asks 3 questions that you need to answer correctly. If you answer all the questions, you are considered to have completed the game. In case of an incorrect answer, the game will end and you will be offered to try again.
 
-<b>Installation:</b>
-  <ul>
-    <li>Download Brain Games</li>
-    <li>From the root of the project, enter the command into the console <b>npm link</b></li>
-  </ul>
-  The application is ready to use!
+## Installation:
+```sh
+npm install
+```
+```sh
+npm link
+```
 
-<br>
-<b>To launch games, enter the following commands into the console:</b>
-<ul>
-  <li>Calculator - <b>brain-calc</b></li>
-  <li>Progression - <b>bran-porgression</b></li>
-  <li>Number is even - <b>brain-even</b></li>
-  <li>Greatest Common Divisor - <b>brain-gcd</b></li>
-  <li>Prime number - <b>brain-prime</b></li>
-</ul>
-  
-<br>
+##  To launch games, enter the following commands into the console:
+launch the game "Calculator"
+```sh
+brain-calc
+```
+launch the game "Progression"
+```sh
+brain-progression
+```
+launch the game "Number is even"
+```sh
+brain-even
+```
+launch the game "Greatest Common Divisor"
+```sh
+brain-gcd
+```
+launch the game "Prime number"
+```sh
+brain-prime
+```
 
-### Demonstration work of the game:
+## Demonstration work of the game:
 
-#### Calculator:
-The user is shown a random number. They need to answer "yes" if the number is even, or "no" if it is odd.
+### Calculator
+The user is shown a random mathematical expression, which they need to evaluate and provide the correct answer.
 ![Screenshot](images/brain-calc.png)
-  <li>Progression:<a href="https://asciinema.org/a/nC9eemJL8NEQXFpzXPJr77L3Z" target="_blank"><img src="https://asciinema.org/a/nC9eemJL8NEQXFpzXPJr77L3Z.svg" /></a></li>
-  <li>Even number:<a href="https://asciinema.org/a/mxqITZDVuvtTfgvTWURS6YGeG" target="_blank"><img src="https://asciinema.org/a/mxqITZDVuvtTfgvTWURS6YGeG.svg" /></a></li>
-  <li>GCD:<a href="https://asciinema.org/a/GbifvVlx1TQHWJ3mac3BDKIUH" target="_blank"><img src="https://asciinema.org/a/GbifvVlx1TQHWJ3mac3BDKIUH.svg" /></a></li>
-  <li>Prime number:<a href="https://asciinema.org/a/e0Eld9ZKUphbKqeeikQ53Gt09" target="_blank"><img src="https://asciinema.org/a/e0Eld9ZKUphbKqeeikQ53Gt09.svg" /></a></li>
-</ul>
+### Progression
+The user is shown a series of numbers forming an arithmetic progression, with one of the numbers replaced by two dots. The player must determine the missing number.
+![Screenshot](images/brain-progression.png)
+### Even number
+The user is shown a random number. They need to answer "yes" if the number is even, or "no" if it is odd.
+![Screenshot](images/brain-even.png)
+### GCD
+The user is shown two random numbers. The user must calculate and enter the greatest common divisor of these numbers.
+![Screenshot](images/brain-gcd.png)
+### Prime number
+The user is shown a random number. They need to answer "yes" if the number is prime, or "no" if it is not prime.
+![Screenshot](images/brain-prime.png)
