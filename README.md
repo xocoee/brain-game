@@ -2,7 +2,7 @@
 
 <a href="https://codeclimate.com/github/xocoee/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/82c59d73510bd57bbc36/maintainability" /></a>
 
-## Project Description
+## Project Description:
 
 "Brain Games" is a project consisting of 5 console games designed to train your brain. Each game asks 3 questions that you need to answer correctly. If you answer all the questions, you are considered to have completed the game. In case of an incorrect answer, the game will end and you will be offered to try again.
 
