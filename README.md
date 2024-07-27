@@ -8,7 +8,7 @@
 <b>Progression</b> - finding missing numbers in a sequence of numbers.<br>
 <b>Number is even</b> - definition of even number.<br>
 <b>Greatest Common Divisor</b> - determining the greatest common divisor.<br>
-<b>Prime number</b> - prime number definition.
+<b>Prime number</b> - prime number definition..
 <br>
 
 <b>Installation:</b>
